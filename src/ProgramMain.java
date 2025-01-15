@@ -21,6 +21,20 @@ public class ProgramMain {
             keyboard.nextLine();
             rockList.add(new Rock(weight));
         }
+
+        System.out.println();
+        BlueCollar BlueCollar1 = new BlueCollar();
+        WhiteCollar WhiteCollar1 = new WhiteCollar();
+
+        BlueCollar1.setWage(12);    // US dollar per hour
+        WhiteCollar1.setWage(20);    // US dollar per hour
+
+        BlueCollar1.build();
+        BlueCollar1.repair();
+        BlueCollar1.destroy();
+        WhiteCollar1.drinkCoffee();
+        WhiteCollar1.attendMeeting();
+        WhiteCollar1.doSpreadsheets();
     }
     public void createInfo(){
         books.add(new Book("Exploring lost worlds", 235));  //Varför fungerar inte detta?
